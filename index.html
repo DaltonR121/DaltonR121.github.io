@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="shortcut icon" href="assets/img/favicon.ico">
+	<title>Ryan Dalton - Software Engineer</title>
+	<link href="assets/css/bootstrap.css" rel="stylesheet">
+	<link href="assets/css/animate.css" rel="stylesheet">
+	<link href="assets/css/prettyPhoto.css" rel="stylesheet">
+	<link href="assets/css/pe-icons.css" rel="stylesheet">
+	<link href="assets/css/style.css" rel="stylesheet">
+	<link href="assets/css/all.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Cabin:300,400,700,300italic,400italic' rel='stylesheet'
+		type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	  <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+	<![endif]-->
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/js/modernizr.custom.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			jQuery('#headerwrap').backstretch([
+				"assets/img/bg/bg1.jpg",
+				"assets/img/bg/bg2.jpg",
+				"assets/img/bg/bg3.jpg"
+			], { duration: 8000, fade: 500 });
+
+			// Map Position And Settings
+			$("#mapwrapper").gMap({
+				controls: false,
+				scrollwheel: false,
+				markers: [{
+					latitude: 40.7566,
+					longitude: -73.9863,
+					icon: {
+						image: "assets/img/marker.png",
+						iconsize: [44, 44],
+						iconanchor: [12, 46],
+						infowindowanchor: [12, 0]
+					}
+				}],
+				icon: {
+					image: "assets/img/marker.png",
+					iconsize: [26, 46],
+					iconanchor: [12, 46],
+					infowindowanchor: [12, 0]
+				},
+				latitude: 40.7566,
+				longitude: -73.9863,
+				zoom: 14
+			});
+		});
+	</script>
+</head>
+
+<body>
+
+	<div id="preloader"></div>
+
+	<div id="search-wrapper">
+		<div class="container">
+			<input id="search-box" placeholder="Search"><span class="close-trigger"><i class="fas fa-angle-up"></i></span>
+		</div>
+	</div>
+
+	<!-- END NAV -->
+	<nav class="menu" id="theMenu">
+		<div class="menu-wrap">
+			<i class="fas fa-bars menu-close"></i>
+			<div id="menu-logo">
+				<h2>Menu</h2>
+			</div>
+
+			<ul id="main-menu">
+				<li><a href="#headerwrap">Home <i class="fas fa-home menu-icon"></i></a></li>
+				<li><a href="#portfolio">Portfolio <i class="fas fa-camera menu-icon"></i></a></li>
+				<li><a href="#resume">Resume <i class="fas fa-file menu-icon"></i></a></li>
+			</ul>
+
+			<ul id="social-icons">
+				<li class="github"><a href="https://github.com/DaltonR121"><i class="fab fa-github"></i></a></li>
+				<li class="linkedin"><a href="https://www.linkedin.com/in/ryan-dalton-160588110/"><i class="fab fa-linkedin"></i></a></li>
+				<li class="angellist"><a href="https://angel.co/u/daltonr121"><i class="fab fa-angellist"></i></a></li>
+			</ul>
+		</div>
+	</nav>
+	<!-- END NAV -->
+
+	<!-- MAIN IMAGE SECTION -->
+	<div id="headerwrap">
+		<div class="container">
+			<div class="row">
+				<div id="bannertext" class="col-lg-8 col-lg-offset-2">
+					<img class="self-image" src="https://avatars.githubusercontent.com/u/24722493?v=4" alt="">
+					<h1 class="fade-down">Ryan Dalton</h1>
+					<h2 class="fade-up">Software Engineer</h2>
+					<div class="spacer"></div>
+				</div>
+			</div><!-- row -->
+		</div><!-- /container -->
+	</div><!-- /headerwrap -->
+
+	<section id="portfolio" class="white">
+		<div class="container">
+			<div class="gap"></div>
+			<div class="centered gap fade-down section-heading">
+				<h2 class="main-title">Portfolio Projects</h2>
+				<hr>
+				<p class="portfolio-sub">Please explore the applications listed below!</p>
+			</div>
+
+			<ul class="portfolio-items col-2 isotope fade-up gap">
+				<li class="portfolio-item apps isotope-item">
+					<h1>spaceXchange</h1>
+					<div class="item-inner">
+						<img src="assets/img/projectScreenshots/spaceXchange.png">
+						<div class="overlay">
+							<a class="preview btn btn-outlined btn-primary" href="https://spacexchange.herokuapp.com/"><i
+									class="fa fa-link"></i></a>
+						</div>
+					</div>
+				</li>
+				<!--/.portfolio-item-->
+				<li class="portfolio-item joomla nature isotope-item">
+					<h1>Financial Friendship</h1>
+					<div class="item-inner">
+						<img src="assets/img/projectScreenshots/financial-friendship.png">
+						<div class="overlay">
+							<a class="preview btn btn-outlined btn-primary" href="https://financialfriendship.herokuapp.com/"><i
+									class="fa fa-link"></i></a> a>
+						</div>
+					</div>
+				</li>
+				<!--/.portfolio-item-->
+				<li class="portfolio-item joomla design apps isotope-item">
+					<h1>the-grinds</h1>
+					<div class="item-inner">
+						<img src="assets/img/projectScreenshots/the-grinds.png">
+						<div class="overlay">
+							<a class="preview btn btn-outlined btn-primary" href="https://the-grinds.herokuapp.com/"><i
+									class="fa fa-link"></i></a>
+						</div>
+					</div>
+				</li>
+				<!--/.portfolio-item-->
+				<li class="portfolio-item bootstrap design isotope-item">
+					<h1>Navigamer</h1>
+					<div class="item-inner">
+						<img src="assets/img/projectScreenshots/navigamer.png">
+						<div class="overlay">
+							<a class="preview btn btn-outlined btn-primary" href="https://aa-navigamer.herokuapp.com/"><i
+									class="fa fa-link"></i></a> >
+						</div>
+					</div>
+				</li>
+				<!--/.portfolio-item-->
+			</ul>
+		</div>
+	</section>
+
+
+	<!-- TECHNOLOGY LOGOS -->
+	<div class="grey">
+		<div class="container">
+
+			<div class="row">
+				<div class="centered gap fade-down section-heading">
+					<h2 class="technologies">Familiar Technologies</h2>
+					<hr>
+					<p>Here are some of the tecnologies I've experienced so far!</p>
+				</div>
+			</div><!-- row -->
+
+			<div class="row centered">
+				<div id="logo-carousel" class="fade-up">
+					<div class="item">
+						<img src="assets/img/logo/node.png" alt="">
+					</div>
+					<div class="item">
+						<img src="assets/img/logo/javascript.png" alt="">
+					</div>
+					<div class="item">
+						<img src="assets/img/logo/react.png" alt="">
+					</div>
+					<div class="item">
+						<img src="assets/img/logo/redux.png" alt="">
+					</div>
+					<div class="item">
+						<img src="assets/img/logo/python.png" alt="">
+					</div>
+					<div class="item">
+						<img src="assets/img/logo/postgresql.png" alt="">
+					</div>
+				</div>
+			</div><!-- row -->
+		</div><!-- container -->
+	</div><!-- dg -->
+
+	<section id="resume" class="divider-wrapper">
+		<div class="container">
+			<div class="centered gap fade-down section-heading">
+				<h2 class="main-title">Resume</h2>
+				<hr>
+			</div>
+			<div class="col-lg-8 col-lg-offset-2">
+				<iframe
+					src="https://docs.google.com/document/d/e/2PACX-1vRf8mHmfjD9OgymhVdu9eqnfi8NOIBTmyJFE2OqklZtZ3OGx9umesOe4zrrjrFdUb8hjAQC8oNIkG92/pub?embedded=true"
+					width="725" height="1240" allowfullscreen="true" mozallowfullscreen="true"
+					webkitallowfullscreen="true"></iframe>
+			</div>
+		</div><!-- container -->
+	</section>
+
+
+	<!-- MAIN FOOTER -->
+	<div id="footerwrap">
+		<div class="container">
+		</div><!-- container -->
+		<div id="footer-copyright">
+			<div class="container">
+				RyanDalton.dev
+			</div>
+		</div>
+	</div>
+
+	<a id="gototop" class="gototop no-display" href="#"><i class="fa fa-angle-up"></i></a>
+	<!-- END MAIN FOOTER -->
+
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/plugins.js"></script>
+	<script src="assets/js/imagesloaded.js"></script>
+	<script src="assets/js/prettyPhoto.js"></script>
+	<script src="assets/js/init.js"></script>
+</body>
+
+</html>
