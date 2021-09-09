@@ -2,3 +2,8 @@
     display: inline-block;
     list-style-type: none;
 }
+
+#banner {
+    background-image: url('../img/bg/codeSnippet.jpg');
+    height: 710px;
+}
