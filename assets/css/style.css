@@ -7,3 +7,8 @@
     background-image: url('../img/bg/codeSnippet.jpg');
     height: 710px;
 }
+
+#banner h1,
+#banner h2 {
+    color: white;
+}
